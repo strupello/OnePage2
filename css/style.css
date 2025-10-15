@@ -37,3 +37,6 @@
     /*Animacje*/
     --transition-fast: 150ms;
 }
+html {
+    scroll-behavior: smooth;
+}
