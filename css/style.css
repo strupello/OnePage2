@@ -37,6 +37,129 @@
     /*Animacje*/
     --transition-fast: 150ms;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+}
+
 html {
     scroll-behavior: smooth;
 }
+
+
+.top-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.top-custom-care {
+    height: 95px;
+    background-color: var(--color-primary);
+    display: flex;
+    color: dimgray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-h3);
+}
+
+.top-menu {
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: white;
+    width: 100%;
+    font-size: var(--font-size-h2);
+
+}
+
+.cash {
+    height: 100%;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my-account {
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .top-custom-care {
+        padding-left: 10px;
+        height: 35px;
+        white-space: nowrap;
+        background-color: var(--color-bg);
+        font-size: var(--font-size-h6);
+        color: white;
+    }
+    .top-info {
+        height: 35px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .top-menu {
+        height: 35px;
+        justify-content: flex-end;
+        flex-direction: row;
+        font-size: var(--font-size-h6);
+        background-color: var(--color-bg);
+        color: white;
+    }
+    .img-top-class {
+        height: 35px;
+    }
+    .my-account {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search {
+        height: auto;
+        border-right: 1px solid gray;
+        margin-right: 15px;
+    }
+
+}
+
+@media (min-width: 1024px) {}
