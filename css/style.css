@@ -62,7 +62,7 @@ html {
 .top-info {
     display: flex;
     justify-content: center;
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -92,28 +92,93 @@ html {
 
 
 }
+
 .text-top-menu {
+    margin: 0;
     font-size: var(--font-size-h5);
 }
+
 .img-top-class {
-    height: 40px;
+    height: 50px;
 }
+
 .cash {
     border-right: 1px solid gray;
     padding-right: 10px;
+    display: block;
+    position: relative;
+
+}
+
+.cash-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+.cash-link:visited {
+    color: white;
+}
+
+.cash-menu-hamburger {
+    display: none;
+    list-style-type: none;
+}
+
+.cash-menu-hamburger:hover {
+    display: flex;
+
 
 }
+
+.cash-menu-hamburger-element {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.cash-menu-hamburger-element-a {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: var(--color-bg);
+    color: white;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+
+}
+
+.cash:hover>.cash-menu-hamburger {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 1.5px;
+
+}
+
 
 .my-account {
     width: 60%;
     border-right: 1px solid gray;
+    display: block;
+    white-space: nowrap;
+}
+
+.my-account-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
+}
+
+.my-account-link:visited {
+    color: white;
 }
 
 .search {
@@ -149,12 +214,17 @@ html {
         background-color: var(--color-bg);
         color: white;
     }
+
     .text-top-menu {
         font-size: var(--font-size-h6);
     }
 
     .img-top-class {
         height: 35px;
+    }
+
+    .img-top-class1 {
+        height: 30px;
     }
 
     .my-account {
