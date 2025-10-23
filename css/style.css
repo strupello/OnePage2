@@ -55,11 +55,11 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+
 
   @media (min-width: 640px) {
-    & {
-      padding: 0 1.5rem;
+     {
+
     }
   }
 }
@@ -355,8 +355,10 @@ p {
   }
 
   .short-menu {
+
     display: flex;
     height: 100%;
+    padding: 0;
   }
 
   .img-div1 {
