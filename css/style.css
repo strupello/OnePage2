@@ -209,7 +209,7 @@ p {
   display: none;
 }
 
-<<<<<<< HEAD=======>>>>>>>4261c4eab7153d9f0000e0a8f8d6e5a1fd8aff9e @media (min-width: 640px) {
+@media (min-width: 640px) {
   .banner {
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ p {
     box-shadow: 4px 5px 10px black;
   }
 
-  <<<<<<< HEAD=======>>>>>>>4261c4eab7153d9f0000e0a8f8d6e5a1fd8aff9e .button3-text {
+  .button3-text {
     color: white;
     text-align: center;
     padding: 0;
@@ -339,7 +339,7 @@ p {
     padding: 0 10px;
   }
 
-  <<<<<<< HEAD .search {
+  HEAD .search {
     height: auto;
     border-right: 1px solid gray;
     margin-right: 15px;
