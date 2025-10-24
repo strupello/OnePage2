@@ -45,7 +45,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--color-primary);
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -55,13 +55,6 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-
-
-  @media (min-width: 640px) {
-     {
-
-    }
-  }
 }
 
 .header {
@@ -91,21 +84,22 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+   text-align: center;
 }
 
 .top-custom-care {
   display: flex;
   height: 100%;
+  align-items: center;
+  color: black;
+  background-color: white;
+  width: 100%;
+
 }
 
 .top-custom-care-text {
-  font-size: var(--font-size-h5);
 
-  @media (min-width: 640px) {
-    & {
-      font-size: var(--font-size-h6);
-    }
-  }
+  font-size: var(--font-size-h5);
 }
 
 .top-menu {
@@ -304,6 +298,7 @@ p {
     padding-left: 10px;
     white-space: nowrap;
     color: white;
+    background-color: var(--color-black);
   }
 
   .top-custom-care-text {
@@ -349,9 +344,9 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: 350px;
-    border: 1px solid black;
+
   }
 
   .short-menu {
@@ -359,13 +354,29 @@ p {
     display: flex;
     height: 100%;
     padding: 0;
+
   }
 
   .img-div1 {
-    flex-direction: column;
     flex: 1;
     width: 100%;
     background-color: grey;
+    cursor: pointer;
+  }
+
+  .img-div1:active,
+  .img-div2:active,
+  .img-div3:active,
+  .img-div4:active {
+    transform: scale(1);
+    box-shadow: inset 5px 5px 10px black;
+  }
+
+  .img-div1:hover,
+  .img-div2:hover,
+  .img-div3:hover,
+  .img-div4:hover {
+    opacity: 0.75;
   }
 
   .img-div1-2 {
@@ -380,35 +391,35 @@ p {
     height: 100%;
     display: flex;
     flex-direction: row;
-
-
   }
 
   .img-div2 {
     flex: 1;
     background-color: green;
+    border-left: 3px solid white;
     width: 100%;
+    cursor: pointer;
   }
 
   .img-div3 {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
     flex: 1;
     background: pink;
     width: 100%;
+    cursor: pointer;
   }
 
   .img-div4 {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
     flex: 1;
     background-color: yellow;
     width: 100%;
+    cursor: pointer;
   }
 
 
-  @media (min-width: 1024px) {
-    .short-menu {
-      max-width: 1100px;
-    }
-  }
+  @media (min-width: 1024px){
 
 }
-
-@media (min-width: 1024px) {}
