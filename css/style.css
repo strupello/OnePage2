@@ -340,7 +340,7 @@ p {
     padding: 0 10px;
   }
 
-  HEAD .search {
+  .search {
     height: auto;
     border-right: 1px solid gray;
     margin-right: 15px;
@@ -410,6 +410,7 @@ p {
     height: 2px;
     background-color: var(--color-black);
     min-width: 60px;
+    opacity: 0.4;
 
   }
 
@@ -427,6 +428,7 @@ p {
   .img-div4:active {
     transform: scale(1);
     box-shadow: inset 5px 5px 10px black;
+    transition: all var(--transition-fast);
   }
 
   .img-div1:hover,
@@ -434,6 +436,7 @@ p {
   .img-div3:hover,
   .img-div4:hover {
     opacity: 0.75;
+    transition: all var(--transition-fast);
   }
 
   .img-div1-2 {
