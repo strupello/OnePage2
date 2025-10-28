@@ -82,6 +82,8 @@ a {
 }
 
 
+
+
 /* END SETUP */
 
 .top-info {
@@ -426,6 +428,7 @@ a {
   .short-menu {
     display: flex;
     height: 100%;
+    user-select: none;
 
   }
 
