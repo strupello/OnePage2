@@ -69,6 +69,7 @@ html {
 p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -237,19 +238,37 @@ a {
   display: block;
   width: 100%;
 }
+
 .menu-card-main-part2 {
   display: none;
 }
+.menu-card-2,
+.menu-card-3,
+.menu-card-4 {
+  display: none;
+}
+.menu-card-main-part1:hover .menu-card-2,
+.menu-card-main-part1:hover .menu-card-3,
+.menu-card-main-part1:hover .menu-card-4 {
+  display: flex;
+}
+
 
 
 @media (min-width: 640px) {
-  .menu-card-main-part{
+  .menu-card-main-part {
     display: flex;
   }
 
   .menu-card-main {
     display: flex;
     max-width: 1100px;
+  }
+
+  .menu-card-2,
+  .menu-card-3,
+  .menu-card-4 {
+    display: flex;
   }
 
   .menu-card-main-part1 {
@@ -266,13 +285,14 @@ a {
   .menu-card-link {
     max-width: 130px;
   }
+
   .menu-card-arrow {
     display: flex;
-      height: 45px;
-      width: 45px;
-      background-color: orange;
-      justify-content: center;
-      align-items: center;
+    height: 45px;
+    width: 45px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
   }
 
   .banner {
