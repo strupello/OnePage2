@@ -230,8 +230,14 @@ a {
   height: 75px;
   justify-content: center;
   align-items: center;
-  background-color: orange;
+  background-color: grey;
+}
 
+.menu-card:hover {
+  background-color: orange;
+  transform: scale(1);
+  box-shadow: inset 1px 1px 10px black;
+  transition: all var(--transition-fast);
 }
 
 .menu-card-link {
@@ -242,23 +248,71 @@ a {
 .menu-card-main-part2 {
   display: none;
 }
+
 .menu-card-2,
 .menu-card-3,
 .menu-card-4 {
   display: none;
 }
+
 .menu-card-main-part1:hover .menu-card-2,
 .menu-card-main-part1:hover .menu-card-3,
 .menu-card-main-part1:hover .menu-card-4 {
   display: flex;
 }
 
+.products-card-1 {
+  background-color: orange;
+  box-shadow: inset 1px 1px 10px black;
+  width: 100%;
+  max-width: 1400px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.products {
+  background-color: white;
+  height: 395px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+
+}
+
+.products-3,
+.products-4,
+.products-5,
+.products-6 {
+  display: none;
+}
+
+.img-products {
+  width: 100%;
+  height: 100%;
+}
+.products:active {
+  transform: scale(1.05);
+  box-shadow: inset 1px 1px 1px black;
+  transition: all var(--transition-fast);
+  border-radius: 3%;
+
+}
 
 
 @media (min-width: 640px) {
   .menu-card-main-part {
     display: flex;
   }
+
 
   .menu-card-main {
     display: flex;
@@ -290,9 +344,16 @@ a {
     display: flex;
     height: 45px;
     width: 45px;
-    background-color: orange;
+    background-color: grey;
     justify-content: center;
     align-items: center;
+  }
+
+  .menu-card-arrow:hover {
+    background-color: orange;
+    transform: scale(1);
+    box-shadow: inset 1px 1px 10px black;
+    transition: all var(--transition-fast);
   }
 
   .banner {
@@ -654,5 +715,18 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  @media (min-width: 768px) {
+    .products-3 {
+      display: flex;
+    }
 
-  @media (min-width: 1024px) {}
+  }
+
+  @media (min-width: 1024px) {
+
+    .products-4,
+    .products-5,
+    .products-6 {
+      display: flex;
+    }
+  }
