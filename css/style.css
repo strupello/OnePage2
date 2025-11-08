@@ -396,12 +396,13 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .sale-head {
   display: flex;
   width: 1100px;
-  max-width: 76%;
+  max-width: 100%;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -422,31 +423,37 @@ a {
 }
 
 .line-left,
-.line-right {
+.line-right,
+.line {
   flex: 1;
   height: 2px;
   background: gray;
 
 }
-.sale-logo-text{
+
+.sale-logo-text {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
-.sale-logo-text1{
+
+.sale-logo-text1 {
   color: white;
 }
+
 .sale-logo-text2 {
   display: flex;
   flex-direction: row;
 
 }
+
 .sale-logo-text2-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-h1);
 }
+
 .sale-logo-text2-2 {
   display: flex;
   flex-direction: column;
@@ -465,11 +472,24 @@ a {
 .sale-products-3 {
   display: none;
 }
+
 .sale-products-4 {
   display: none;
 }
 
+.brands {
+  display: none;
+}
+
+.brands-logo7,
+.brands-logo8 {
+  display: none;
+}
+
+
 @media (min-width: 640px) {
+
+
   .menu-card-main {
     padding: 0 0.75rem;
   }
@@ -892,15 +912,67 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  @media (min-width: 768px) {
-    .sale-products-3 {
-      display: flex;
-    }
+  .brands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .brands-top,
+  .brands-bottom {
+    display: flex;
+    width: 1280px;
+    max-width: 120%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .brands-top-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: var(--font-size-h5);
+  }
+
+  .brands-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .brands-logo {
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 100px;
+  }
+  .brands-img {
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 100px;
+  }
+
+  .sale-products-3 {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+
+    .sale-head {
+      max-width: 76%;
+    }
   }
 
   @media (min-width: 1024px) {
     .sale-products-4 {
+      display: flex;
+    }
+    .brands-logo7,
+    .brands-logo8 {
       display: flex;
     }
 
