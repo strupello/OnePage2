@@ -485,6 +485,9 @@ a {
 .brands-logo8 {
   display: none;
 }
+.about-us {
+  display: none;
+}
 
 
 @media (min-width: 640px) {
@@ -959,7 +962,20 @@ a {
   .sale-products-3 {
     display: flex;
   }
-
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 20px;
+  }
+  .about-us-t {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+  }
   @media (min-width: 768px) {
 
     .sale-head {
