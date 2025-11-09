@@ -492,6 +492,9 @@ a {
 {
   display: none;
 }
+.pre-footer {
+  display: none;
+}
 @media (min-width: 640px) {
   .menu-card-main {
     padding: 0 0.75rem;
@@ -988,6 +991,15 @@ a {
   .pay-cards-img {
     display: flex;
     gap: 20px;
+  }
+  .pre-footer{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    flex-direction: row;
+  }
+  .pre-footer-h {
+    display: flex;
   }
   @media (min-width: 768px) {
 
