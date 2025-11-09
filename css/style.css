@@ -488,11 +488,11 @@ a {
 .about-us {
   display: none;
 }
-
-
+.pay-cards
+{
+  display: none;
+}
 @media (min-width: 640px) {
-
-
   .menu-card-main {
     padding: 0 0.75rem;
   }
@@ -975,6 +975,19 @@ a {
   .about-us-t {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: grey;
+  }
+  .pay-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: darkgrey;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .pay-cards-img {
+    display: flex;
+    gap: 20px;
   }
   @media (min-width: 768px) {
 
