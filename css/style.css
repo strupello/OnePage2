@@ -498,8 +498,20 @@ a {
 }
 footer {
   background-color: black;
-  height: 75px;
   color: white;
+}
+.footer-info {
+  width: 100%;
+  max-width: 1000px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 640px) {
   .menu-card-main {
