@@ -500,20 +500,32 @@ footer {
   background-color: black;
   color: white;
 }
-.footer-info {
-  width: 100%;
-  max-width: 1000px;
+.footer-info{
+  display: flex;
+  justify-content: center;
+}
+.footer-inside {
+  width: 940px;
   height: 75px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
 }
 .footer-text {
+  display: none;
+}
+.footer-copyright {
+  white-space: nowrap;
+}
+@media (min-width: 640px) {
+
+  .footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 }
-@media (min-width: 640px) {
   .menu-card-main {
     padding: 0 0.75rem;
   }
