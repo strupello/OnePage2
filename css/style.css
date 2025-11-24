@@ -531,12 +531,44 @@ footer {
 }
 
 .find-us {
-  height: 75px;
-  background-color: black;
-
+  height: 55px;
+  background-color: grey;
+  width: 100%;
+  max-width: 1256px;
 }
 
+.find-us-section {
+  display: flex;
+  height: 55px;
+  width: 100%;
+  max-width: 940px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.find-us-text {
+  font-size: var(--font-size-h6);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+}
+.find-us-section-part1 {
+  display: none;
+}
+.find-us-section-part2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
 @media (min-width: 640px) {
+  .find-us-section {
+    justify-content: space-between;
+  }
+  .find-us-section-part1 {
+  display: flex;
+}
   .main-menu {
     display: flex;
     width: 100%;
@@ -544,6 +576,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+
   }
 
   .main-menu-logo {
@@ -726,6 +759,7 @@ footer {
     justify-content: space-around;
     gap: 10px;
     padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .banner-dot {
@@ -797,6 +831,7 @@ footer {
     width: 100%;
     max-width: 940px;
     height: 350px;
+    padding: 0;
 
   }
 
@@ -1128,42 +1163,43 @@ footer {
     align-items: center;
     height: 190px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-    .sale-head {
-      max-width: 76%;
-    }
+  .sale-head {
+    max-width: 76%;
+  }
+}
+
+@media (min-width: 868px) {
+
+  .sale-head {
+    max-width: 76%;
   }
 
-  @media (min-width: 868px) {
+  .main-menu-mid {
+    display: flex;
+    padding-left: 110px;
+    white-space: nowrap;
+    font-weight: bold;
+    gap: 15px;
+  }
+}
 
-    .sale-head {
-      max-width: 76%;
-    }
-
-    .main-menu-mid {
-      display: flex;
-      padding-left: 110px;
-      white-space: nowrap;
-      font-weight: bold;
-      gap: 15px;
-    }
+@media (min-width: 1024px) {
+  .sale-products-4 {
+    display: flex;
   }
 
-  @media (min-width: 1024px) {
-    .sale-products-4 {
-      display: flex;
-    }
-
-    .brands-logo7,
-    .brands-logo8 {
-      display: flex;
-    }
-
-    .pre-footer {
-      padding: 20px 0;
-    }
-
-
+  .brands-logo7,
+  .brands-logo8 {
+    display: flex;
   }
+
+  .pre-footer {
+    padding: 20px 0;
+  }
+
+
+}
